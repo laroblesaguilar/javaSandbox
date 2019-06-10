@@ -36,6 +36,21 @@ public class ArrayExercises {
         return greatestValue;
     }
 
+
+    static String reverseString(String string){
+        String reversed = "";
+        String [] arr = string.split(" ");
+        for(int i = arr.length - 1; i >= 0; i--){
+            if(i > 0){
+                reversed += arr[i] + " ";
+            } else {
+                reversed += arr[i];
+            }
+
+        }
+        return reversed;
+    }
+
     public static void main(String[] args) {
 
         int[] num = {7, 5, 6, 2, 1, 100, 8, 9};
@@ -50,6 +65,8 @@ public class ArrayExercises {
         }
 
         System.out.println(greatestValue(num));
+
+        System.out.println(reverseString("I like watching movies"));
 
     }
 
