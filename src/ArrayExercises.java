@@ -62,6 +62,21 @@ public class ArrayExercises {
      return smallestValue;
     }
 
+    static String[] reverseStringArray(String [] arr){
+        String [] reversed = new String [arr.length];
+        int i = arr.length -1;
+        int j = 0;
+        while(i >= 0){
+            reversed[j] = arr[i];
+            j++;
+            i--;
+        }
+
+        return reversed;
+    }
+
+
+
     public static void main(String[] args) {
 
         int[] num = {7, 5, 6, 2, 1, 100, 8, 9};
@@ -80,6 +95,13 @@ public class ArrayExercises {
         System.out.println(reverseString("I like watching movies"));
 
         System.out.println(smallestValue(num));
+
+        String [] test = {"this", "is", "a", "test"};
+
+        for(String s : reverseStringArray(test)){
+            System.out.println(s);
+        }
+
 
     }
 
