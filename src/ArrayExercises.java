@@ -75,6 +75,14 @@ public class ArrayExercises {
         return reversed;
     }
 
+    static String[] fillArray(String [] arr, String fillWith){
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = fillWith;
+        }
+
+        return arr;
+    }
+
 
 
     public static void main(String[] args) {
@@ -101,6 +109,12 @@ public class ArrayExercises {
         for(String s : reverseStringArray(test)){
             System.out.println(s);
         }
+
+        for(String s : fillArray(new String [5], "test")){
+            System.out.println(s);
+        }
+
+
 
 
     }
