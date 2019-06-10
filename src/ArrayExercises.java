@@ -1,5 +1,6 @@
 public class ArrayExercises {
 
+
     static int[] bubbleSort(int[] num) {
         for (int i = 0; i < num.length; i++) {
             int greatestValue = 0;
@@ -51,6 +52,16 @@ public class ArrayExercises {
         return reversed;
     }
 
+    static int smallestValue(int [] num){
+     int smallestValue = num[0];
+     for(int b : num){
+         if(b < smallestValue){
+             smallestValue = b;
+         }
+     }
+     return smallestValue;
+    }
+
     public static void main(String[] args) {
 
         int[] num = {7, 5, 6, 2, 1, 100, 8, 9};
@@ -58,7 +69,7 @@ public class ArrayExercises {
             System.out.println(a);
         }
 
-        int[] num1 = {1, 2, 3, 4, 5, 6};
+        int[] num1 = {1, 2, 3, 4, 5, 6,};
 
         for (int a : reverseIntArray(num1)) {
             System.out.println(a);
@@ -67,6 +78,8 @@ public class ArrayExercises {
         System.out.println(greatestValue(num));
 
         System.out.println(reverseString("I like watching movies"));
+
+        System.out.println(smallestValue(num));
 
     }
 
