@@ -108,6 +108,16 @@ public class ArrayExercises {
         return false;
     }
 
+    static int indexOf(String [] arr, String searchFor){
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i].equals(searchFor)){
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
 
 
 
@@ -145,6 +155,8 @@ public class ArrayExercises {
         int [] numb1 = {1,2,3};
 
         System.out.println(searchFor(test, "no"));
+
+        System.out.println(indexOf(test, "false"));
 
 
     }
