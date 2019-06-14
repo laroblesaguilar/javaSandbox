@@ -83,6 +83,33 @@ public class ArrayExercises {
         return arr;
     }
 
+    static boolean intEquals(int [] num, int [] num2){
+        if(num.length != num2.length){
+            return false;
+        } else{
+            for(int i = 0; i < num.length; i++){
+                if(num[i] != num2[i]){
+                    return false;
+                } else{
+                    return true;
+                }
+            }
+        }
+        return true;
+    }
+
+    static boolean searchFor(String [] arr, String searchFor){
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i].equals(searchFor)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+
 
 
     public static void main(String[] args) {
@@ -114,7 +141,10 @@ public class ArrayExercises {
             System.out.println(s);
         }
 
+        int [] numb = {1,2,3};
+        int [] numb1 = {1,2,3};
 
+        System.out.println(searchFor(test, "no"));
 
 
     }
